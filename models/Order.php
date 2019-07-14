@@ -16,4 +16,10 @@ class Order extends Model
     {
         return $this->hasOne(Worker::className, ['order_id' => 'id']);
     }
+
+    private function WriteLog()
+    {
+        echo "the What!";
+            
+    }
 }
